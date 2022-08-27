@@ -23,20 +23,21 @@
    }
    #container{
     width: 100%;
-    /* border: 2px solid green; */
-    height: 600px;
+    height: 800px;
     margin-top: 100px;
     text-align: center;
+    padding: 20px;
    }
    #container>div{
     width: 40%;
     /* border: 2px solid green; */
-    height: 500px;
+    height: 650px;
     align-items: center;
     margin: auto;
     margin-top: 30px;
     padding: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-bottom: 50px;
    }
    #container>div>div , 
    input , 
@@ -90,7 +91,17 @@
    }
    #container>div>p{
      text-align: left;
-     margin:20px 0px -20px 55px;
+     margin:20px 0px -15px 55px;
+     font-weight:bolder;
+    font-family:'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   #bor+p>span{
+    font-size: 10px;
+    color: red;
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    }
     #bor{
      display: flex;
@@ -106,7 +117,7 @@
      }
      button{
     background-color:rgb(28,177,205);
-    width: 60%;
+    width: 50%;
     height: 50px;
     font-weight: bold;
     color: white;
@@ -114,6 +125,59 @@
     border-radius: 40px;
     border: none;
      }
+#container>h1{
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#bor1 ,#bor2{
+    margin: auto;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#bor1{
+    margin-top: -200px;
+}
+#mnumber{
+    margin-bottom: 30px;
+}
+#container>div>div:hover{
+    cursor: pointer;
+}
+@media all and (min-width:481px) and (max-width:768px){
+
+    #bor1{
+        align-items: center;
+        margin: auto;
+        margin-top: -200px;
+    }
+    #bor1>p{
+     margin: 0px 0px 0px 40px ;
+    }
+    #bor1>img{
+    margin: 10px 0px 0px 30px;
+  }
+    #bor2{
+        text-align: center;
+        margin-top: 10px;
+        align-items: center;
+        margin: auto;
+    }
+    #bor2>p{
+     margin: 0px 0px 0px 40px ;
+    }
+  #bor2>img{
+    width: 35%;
+    margin: 10px 0px 0px 35px;
+  }
+  #container>div>p{
+     margin:20px 0px -15px 25px;
+   }
+   #container>div>div:nth-child(2)>span {
+    color: white;
+   }
+}
     </style>
 </head>
 <body>
@@ -136,14 +200,18 @@
                 <span>Sign in with Apple</span>
             </div>
             <span id="bor">OR</span>
-            <p>Enter Your Mobile Number</p>
-            <input type="text" name="" id="">
+            <p>Enter Your Mobile Number <span>*</span></p>
+            <input type="text" name="" id="mnumber">
             <button>Continue</button>
         </div>
-        <div id="bor1">
-            <p> Powered by</p>
-            <img src="https://images.livemint.com/img/static/ht-digital-logo.svg" alt="Error">
-        </div>
+    </div>
+    <div id="bor1">
+        <p> Powered by</p>
+        <img src="https://images.livemint.com/img/static/ht-digital-logo.svg" alt="Error">
+    </div>
+    <div id="bor2">
+        <p>One network. One account</p>
+        <img src="https://images.livemint.com/dev/LHNewFooterLogoDesk.svg" alt="Error">
     </div>
 </body>
 </html>
